@@ -1,4 +1,4 @@
-# source /usr/share/cachyos-fish-config/cachyos-config.fish
+source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 set -x DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 
