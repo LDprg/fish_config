@@ -8,6 +8,8 @@ export OPENCV_VIDEOIO_PRIORITY_INTEL_MFX=0
 # Zoxide
 set --universal zoxide_hook --on-event fish_prompt
 
+fish_add_path -g ~/.cargo/bin
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     source /etc/grc.fish
