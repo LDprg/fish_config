@@ -14,6 +14,7 @@ if status is-interactive
     # alias ls='grc ls -l'
     alias ls='lsd -l'
     alias v='nvim'
+    . /home/ld/export-esp.sh
     functions --erase please
 
     # moonfly theme for the Fish shell
@@ -57,3 +58,12 @@ if status is-interactive
     set -g fish_pager_color_selected_description e4e4e4
 end
 
+
+# pnpm
+set -gx PNPM_HOME "/home/ld/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
+set -g PATH "/home/ld/.bun/bin/" $PATH
