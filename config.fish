@@ -67,3 +67,7 @@ end
 # pnpm end
 
 set -g PATH "/home/ld/.bun/bin/" $PATH
+
+set -gx NDK_HOME "$ANDROID_HOME/ndk/28.2.13676358/"
+set -gx ANDROID_NDK_HOME "$NDK_HOME"
+set -gu ANDROID_SDK_ROOT
