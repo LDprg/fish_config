@@ -17,7 +17,9 @@ if status is-interactive
     alias ls='lsd -l'
     alias v='nvim'
     . /home/ld/export-esp.sh
+
     functions --erase please
+    starship init fish | source
 
     # moonfly theme for the Fish shell
     #
@@ -70,6 +72,7 @@ end
 
 set -g PATH "/home/ld/.bun/bin/" $PATH
 
+set -gx ANDROID_HOME "/opt/android-sdk/"
 set -gx NDK_HOME "$ANDROID_HOME/ndk/28.2.13676358/"
 set -gx ANDROID_NDK_HOME "$NDK_HOME"
 set -gu ANDROID_SDK_ROOT
